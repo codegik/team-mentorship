@@ -1,6 +1,6 @@
 #!/bin/sh
 
-REPOS_FILE="$HOME/.config/team/repos"
+REPOS_FILE="$HOME/.config/team/repo-url"
 
 if [[ ! -f "$REPOS_FILE" ]]; then
   echo "Please add repositories in file $REPOS_FILE"
@@ -15,8 +15,8 @@ if [[ -z "$REPOS" ]]; then
   exit 1
 fi
 
-TARGET_DIR="/tmp/team-repos"
-TMP_FILE="/tmp/team-commits"
+TARGET_DIR="$HOME/.config/team/repositories"
+TMP_FILE="/tmp/team-commit-status"
 
 mkdir -p $TARGET_DIR && cd $TARGET_DIR
 

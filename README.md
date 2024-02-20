@@ -6,11 +6,11 @@ This is a tool belt to help me in daily bases work as a software engineer mentor
 - Git client
 
 ## Setup
-Just need to create a list of repositories you want to watch in this config file `~/.config/team/repos`.
+Just need to create a list of repositories you want to watch in this config file `~/.config/team/repo-url`.
 
 ```bash
 mkdir -p ~/.config/team
-echo "https://github.com/codegik/pocs.git" >> ~/.config/team/repos
+echo "https://github.com/codegik/pocs.git" >> ~/.config/team/repo-url
 ```
 
 ## team-commits
